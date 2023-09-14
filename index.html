@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Discovery App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to the Movie Discovery App</h1>
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Search for a movie...">
+                <button id="search-button">Search</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="movies-grid" id="results-container">
+            <!-- Results will be displayed here -->
+        </section>
+        <div class="loading" id="loading-indicator" style="display: none;">Loading...</div>
+
+        <h1>Featured movie</h1>
+        <div class="container">
+            <section class="movies-grid">
+
+                <!-- Movie Card 1 -->
+                <div class="card" data-testid="movie-card">
+                    <div class="img">
+                        <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                    </div>
+                    <div class="information">
+                        <h2 data-testid="movie-title">Jagun Jagun</h2>
+                        <div class="single-information">
+                            <h1 data-testid="movie-title">Loading...</h1>
+                            <p data-testid="movie-release-date">Release Date: Loading...</p>
+                            <p data-testid="movie-runtime">Runtime: Loading...</p>
+                            <p data-testid="movie-overview">Overview: Loading...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- movie card 2 -->
+                <div class="card" data-testid="movie-card">
+                    <div class="img">
+                        <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                    </div>
+                    <div class="information">
+                        <h2 data-testid="movie-title">Jagun Jagun</h2>
+                        <div class="single-information">
+                            <span>Rating:</span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-information">
+                            <span data-testid="movie-release-date">Release Date:</span>
+                            <span>10-08-2022</span>
+                        </div>
+                    </div>
+                </div>
+
+             <!-- movie card 3 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- movie card 4 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- movie card 5 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- movie card 6 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- movie card 7 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- movie card 8 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- movie card 9 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- movie card 10 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- movie card 11 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- movie card 12 -->
+             <div class="card" data-testid="movie-card">
+                <div class="img">
+                    <img src="https://unsplash.it/500/1000" alt="Movie Poster" data-testid="movie-poster">
+                </div>
+                <div class="information">
+                    <h2 data-testid="movie-title">Jagun Jagun</h2>
+                    <div class="single-information">
+                        <span>Rating:</span>
+                        <span>10 / 10</span>
+                    </div>
+                    <div class="single-information">
+                        <span data-testid="movie-release-date">Release Date:</span>
+                        <span>10-08-2022</span>
+                    </div>
+                </div>
+            </div>
+
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Movie Discovery App</p>
+        </div>
+    </footer>
+</body>
+</html>

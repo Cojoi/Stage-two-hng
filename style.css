@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Corrected font family */
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 16px; /* Set a base font size for the entire page */
+}
+
+/* Hide the scrollbar across all browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 1200px; /* Set a maximum width for your content */
+  margin: 0 auto; /* Center align the content horizontally */
+  padding: 20px; /* Add some padding to the container */
+}
+
+.search {
+  margin-bottom: 20px; /* Add space below the search input */
+}
+
+.search input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none; /* Remove the input outline on focus */
+}
+
+.search button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.card {
+  width: calc(33.33% - 20px); /* Adjust card width for a 3-column layout with spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Add space between cards */
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+
+.img {
+  height: 200px; /* Adjust the image height */
+  position: relative;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the gradient overlay */
+.img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(to top, #151515, transparent);
+}
+
+.information {
+  padding: 1rem; /* Adjust padding for movie information */
+}
+
+.information h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.single-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+  color: #333;
+}
+
+/* Style the movie grid */
+.movies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Distribute cards evenly */
+}
